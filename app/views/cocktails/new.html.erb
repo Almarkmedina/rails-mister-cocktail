@@ -1,9 +1,13 @@
-<div class="container">
-  <div class="row">
-    <div class="col-6">
-      <%= render "form" %>
-    </div>
-  </div>
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= image_path 'new_banner.jpg' %>')">
 </div>
 
-<%= link_to "Back to homepage", cocktails_path %>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <%= render "form" %>
+      </div>
+    </div>
+    <div class="button_dose">
+      <%= link_to "Back to main page", cocktails_path, class: "btn btn-ghost" %>
+    </div>
+
+
